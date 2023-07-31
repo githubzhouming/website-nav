@@ -1,5 +1,5 @@
 # 官方node 镜像
-FROM node:20-alpine AS base
+FROM node:20-alpine AS buildimage
 # 指定工作目录
 WORKDIR /app
 # 拷贝文件
@@ -13,4 +13,4 @@ EXPOSE 80
 
 FROM nginx:1.24-alpine
 
-COPY --from=base /app/dist /user/share/nginx/html
+COPY --from=buildimage /app/dist /usr/share/nginx/html
