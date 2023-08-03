@@ -120,6 +120,11 @@ const datas: Array<WebSiteCategory> = [
 				name: 'Github docker-library',
 				url: 'https://github.com/docker-library/docs/tree/master/nginx',
 			},
+			{
+				id: 3016,
+				name: 'highcharts',
+				url: 'https://www.hcharts.cn/',
+			},
 		],
 	},
 	{
